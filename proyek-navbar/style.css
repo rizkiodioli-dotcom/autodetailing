@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Efek scroll halus saat menu diklik */
+}
+
+body {
+  background-color: lch(100% 0.01 296.81);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lch(9.3% 11.37 279.58);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.btn-login {
+  background-color: #38bdf8;
+  color: #0f172a !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.btn-login:hover {
+  background-color: #0284c7;
+  color: white !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ================= HERO SECTION ================= */
+
+/* ================= Box 1 ================= */
+.hero {
+  background-image: url('background1.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: #38bdf8;
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #38bdf8;
+  margin-bottom: 2.2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 0.85rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0284c7;
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  padding: 0.85rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+/* ================= FEATURES / LAYANAN ================= */
+.features {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ================= Box 2 ================= */
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
+  border-top: 4px solid #38bdf8;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+}
+
+.feature-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  background-color: #e2e8f0;
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 750px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.about p {
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.8rem 0;
+  font-size: 0.9rem;
+}
+
+/* ================= MENU AKTIF ================= */
+.nav-links a.active-menu {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* ================= PAGE HEADER (HALAMAN LAYANAN) ================= */
+.page-header {
+  background-image: url('background2.jpg');
+  background-size: cover;
+    background-position: center;
+  color: white;
+  padding: 4.5rem 2rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-header p {
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ================= DETAIL LAYANAN ================= */
+.services-detail {
+  padding: 5rem 0;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-box {
+  background: white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-left: 5px solid #38bdf8;
+}
+
+.service-info {
+  flex: 2;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.service-info h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+}
+
+.service-info p {
+  color: #475569;
+  margin-bottom: 1.2rem;
+}
+
+.service-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-checklist li::before {
+  content: "✓ ";
+  color: #0284c7;
+  font-weight: bold;
+}
+
+.service-price {
+  flex: 1;
+  background-color: #f8fafc;
+  padding: 1.8rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.price-tag {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin: 0.5rem 0 1.2rem 0;
+}
+
+.price-tag span {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #64748b;
+}
+
+/* ================= CTA BANNER ================= */
+.cta-banner {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.cta-banner p {
+  color: #cbd5e1;
+  margin-bottom: 1.8rem;
+}
+
+/* ================= RESPONSIVE MOBILE ================= */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    display: none;
+    border-top: 1px solid #334155;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
